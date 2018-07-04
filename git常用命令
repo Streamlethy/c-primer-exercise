@@ -1,0 +1,18 @@
+设置用户名                  git config --global user.name "xxxx"
+设置用户邮箱                git config --global user.email "xxxx@163.com"
+设置权限问题                修改.git/config文件中
+    [remote "origin"]
+      url=https://github.com/用户名/仓库名.git
+   为：
+      url=https://用户名:密码@github.com/用户名/仓库名.git
+查看设置                    git config --list
+初始化                      git init
+查看状态                    git status
+添加文件到暂存区            git add xxx.txt
+将文件从暂存区删除          git rm  xxx.txt
+添加文件到本地仓库          git commit -m "描述信息"
+从本地仓库删除文件          从暂存区删除后，提交到本地仓库，即可删除
+提交本地仓库代码到远程仓库  git push
+将本地仓库关联到GitHub仓库上git remote add origin https://github.com/xxx/xxx
+将GitHub仓库更新到本地      git pull origin master
+将本地仓库同步到GitHub仓库  git push origin master
